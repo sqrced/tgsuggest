@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tg-suggest-bot
+    env: python
+    startCommand: python bot.py
+    plan: free
+    envVars:
+      - key: BOT_TOKEN
+        value: 8528634273:AAEKpl5KWTMuKNOrOgAAhuSYE9-zyhYXxp0
+      - key: ADMIN_IDS
+        value: 123456789,987654321
+      - key: CHANNEL_ID
+        value: -1001234567890
+      - key: WEBHOOK_URL
+        value: https://tg-suggest-bot.onrender.com/webhook
